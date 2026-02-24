@@ -23,3 +23,6 @@
       Data Modeling
       Complex SQL Joins
       Business Insight Generation
+
+
+
