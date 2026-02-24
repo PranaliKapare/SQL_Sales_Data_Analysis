@@ -44,7 +44,33 @@ The database consists of three tables:
 ✔ Monthly Revenue Trends  
 ✔ City-wise Sales Performance  
 
----
+📌 Total Revenue Calculation Query
+
+This SQL query calculates the total revenue generated from all product sales.
+It joins the orders and products tables using product_id, multiplies the product price by the quantity sold for each order, and then uses the SUM() function to compute the overall revenue.
+
+The result represents the total income earned by the company from sales.
+
+📌 Customer Total Spending Query
+
+This SQL query calculates the total amount spent by each customer.
+It joins the customers, orders, and products tables using their respective IDs. For each customer, it multiplies the product price by the quantity ordered and uses the SUM() function to calculate the total spending.
+
+The results are grouped by customer name and sorted in descending order to display the highest spending customers first.
+
+📌 Monthly Revenue Calculation Query
+
+This SQL query calculates the monthly revenue generated from product sales.
+It extracts the month from the order_date using the MONTH() function, joins the orders and products tables, and multiplies the product price by the quantity ordered.
+
+The SUM() function is used to calculate the total revenue for each month, and the results are grouped by month to show the revenue generated in each month.
+
+📌 City-wise Revenue Calculation Query
+
+This SQL query calculates the total revenue generated from each city.
+It joins the customers, orders, and products tables using their respective IDs. For each city, it multiplies the product price by the quantity ordered and uses the SUM() function to compute the total revenue.
+
+The results are grouped by city to display the total income generated from customers in each city.
 
 ## 🛠️ SQL Concepts Used
 
